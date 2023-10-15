@@ -115,3 +115,60 @@
 
 )
 
+
+(defrule flowers_diseases
+    (flowers 1)
+    =>
+	(printout t "Flower bud rot can cause the browning and rotting of coffee flower buds before they fully open. ") ;Flower Bud Rot
+    (printout t "Enter 11 if you observed this characteristics and 0" crlf)
+    (printout t "choice : ")
+    (bind ?flowers(read))
+    (assert (flowers ?flowers))
+
+
+    (printout t "Flower blight can result in the development of brown to black lesions on coffee flowers. These lesions are often associated with a fuzzy, mold-like growth. Infected flowers may not open fully and can wilt prematurely. ") ;Flower Blight
+    (printout t "Enter 22 if you observed this characteristics and 0" crlf)
+    (printout t "choice : ")
+    (bind ?flowers(read))
+    (assert (flowers ?flowers))
+
+    (printout t "Petal spotting can result in brown to black lesions on the petals of coffee flowers. These spots may be sunken and lead to wilting or the premature shedding of flower petals. ") ;Petal Spotting 
+    (printout t "Enter 33 if you observed this characteristics and 0" crlf)
+    (printout t "choice : ")
+    (bind ?flowers(read))
+    (assert (flowers ?flowers))
+
+)
+
+(defrule berries_diseases
+    (berries 1)
+    =>
+    (printout t "Infected coffee berries develop circular, sunken, green lesions, which turn dark brown to black as the disease progresses. ") ;Coffee Berry Disease
+    (printout t "Enter 11 if you observed this characteristics and 0" crlf)
+    (printout t "choice : ")
+    (bind ?berries(read))
+    (assert (berries ?berries))
+
+    (printout t "Causes irregular, dark brown to black lesions on coffee berries. These lesions may be sunken and are often surrounded by a reddish-brown border. Infected berries can have reduced quality and appearance.. ") ;Coffee Berry Blotch               
+    (printout t "Enter 22 if you observed this characteristics and 0" crlf)
+    (printout t "choice : ")
+    (bind ?berries(read))
+    (assert (berries ?berries))
+
+    (printout t "Anthracnose affects coffee berries, causing dark, sunken lesions with orange or pinkish centers. These lesions can expand and result in berry deformation and reduced bean quality. ") ;Coffee Bean Anthracnose              
+    (printout t "Enter 33 if you observed this characteristics and 0" crlf)
+    (printout t "choice : ")
+    (bind ?berries(read))
+    (assert (berries ?berries))
+
+)
+
+
+
+
+
+
+
+
+
+
