@@ -87,8 +87,7 @@
     (bind ?stems-branches (read))
     (assert (stems-branches  ?stems-branches))
 
-)
-	
+)	
 
 (defrule roots_diseases
 	(roots 1)
